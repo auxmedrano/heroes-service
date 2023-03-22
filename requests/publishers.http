@@ -1,0 +1,36 @@
+@api = http://localhost:4000/api/publishers
+
+### get publishers
+GET {{api}}
+
+### create publisher
+POST {{api}}
+Content-Type: application/json
+
+{
+  "name": "Marvel Comics"
+}
+
+### create publisher
+POST {{api}}
+Content-Type: application/json
+
+{
+  "name": "DC Comics"
+}
+
+### get publisher
+GET {{api}}/1
+
+### delete publisher
+DELETE {{api}}/3
+
+### update publisher
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+  "name": "Marvel Comics"
+}
+### get heroes for publisher
+GET {{api}}/2/heroes
