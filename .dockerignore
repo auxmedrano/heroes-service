@@ -1,0 +1,11 @@
+node_modules/
+docs/
+requests/
+sql/
+.git
+npm-debug.log
+.coverage
+.coverage.*
+.env
+.aws
+Dockerfile
