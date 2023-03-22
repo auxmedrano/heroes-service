@@ -8,8 +8,8 @@ export const sequelize = new Sequelize(
   // process.env.HEROES_SERVICE_DB_USER, // username
   // process.env.HEROES_SERVICE_DB_PASS, // password
   {
-    host: "localhost",
-    // host: "some-postgres",
+    //host: "localhost",
+      host: "some-postgres",
     // host: process.env.HEROES_SERVICE_HOST,
     dialect: "postgres",
     // pool: {
