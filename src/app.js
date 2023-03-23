@@ -9,7 +9,7 @@ import heroesRoutes from "./routes/heroes.routes.js";
 import publisherRoutes from "./routes/publisher.routes.js";
 
 // Middlewares
-//app.use(cors()) //descomentar para habilitar cross-cors
+app.use(cors()) //descomentar para habilitar cross-cors
 app.use(morgan("dev"));
 app.use(express.json());
 

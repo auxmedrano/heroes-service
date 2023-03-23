@@ -1,16 +1,17 @@
 import Sequelize from "sequelize";
 
 export const sequelize = new Sequelize(
-  "heroesdb", // db name,
-  "postgres", // username
-  "mysecretpassword", // password
-  // process.env.HEROES_SERVICE_DB, // db name,
-  // process.env.HEROES_SERVICE_DB_USER, // username
-  // process.env.HEROES_SERVICE_DB_PASS, // password
+  // "heroesdb", // db name,
+  // "postgres", // username
+  // "mysecretpassword", // password
+  process.env.POSTGRES_DB, // db name,
+  process.env.POSTGRES_USER, // username
+  process.env.POSTGRES_PASSWORD, // password
   {
     //host: "localhost",
-      host: "some-postgres",
-    // host: process.env.HEROES_SERVICE_HOST,
+    //host: "some-postgres",
+    host: process.env.POSTGRES_HOST,
+    port: process.env.POSTGRES_PORT,
     dialect: "postgres",
     // pool: {
     //   max: 5,

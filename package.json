@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "prod": "npm ci --only=production"
+    "prod": "npm ci --omit=dev"
   },
   "keywords": [],
   "author": "",

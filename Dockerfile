@@ -1,7 +1,7 @@
 FROM node:16.19-alpine
 WORKDIR /app
 COPY ./*.json ./
-RUN npm install
-RUN npm install nodemon
+RUN npm run prod
+
 COPY . .
-CMD [ "npm","run","dev" ]
+CMD [ "npm","run","start" ]
