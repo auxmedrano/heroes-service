@@ -20,6 +20,8 @@ This is the basic relationship that we are using in this example
 
 ```bash
 .
+├── Dockerfile
+├── Dockerfile.dev
 ├── README.md
 ├── docs
 │   └── diagram.png
@@ -48,5 +50,5 @@ This is the basic relationship that we are using in this example
         ├── heroes.routes.js
         └── publisher.routes.js
 
-9 directories, 18 files
+9 directories, 20 files
 ```
